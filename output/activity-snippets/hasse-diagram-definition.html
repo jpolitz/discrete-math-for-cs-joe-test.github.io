@@ -30,6 +30,9 @@
         font-size: 0.9em;
         padding: 1em;
       }
+      h1 {
+        font-size: 1.8em;
+      }
     }
     @media print {
       body {
@@ -134,6 +137,12 @@
     #TOC li {
       list-style: none;
     }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
     #TOC a:not(:hover) {
       text-decoration: none;
     }
@@ -149,6 +158,15 @@
   <![endif]-->
 </head>
 <body>
-<p>For a partial ordering, its <span><strong>Hasse diagram</strong></span> is a graph whose nodes (vertices) are the elements of the domain of the binary relation and which are located such that nodes connected to nodes above them by (undirected) edges indicate that the relation holds between the lower node and the higher node. Moreover, the diagram omits self-loops and omits edges that are guaranteed by transitivity.</p>
+<div class="flushright">
+
+</div>
+<p>For a partial ordering, its <span><strong>Hasse
+diagram</strong></span> is a graph whose nodes (vertices) are the
+elements of the domain of the binary relation and which are located such
+that nodes connected to nodes above them by (undirected) edges indicate
+that the relation holds between the lower node and the higher node.
+Moreover, the diagram omits self-loops and omits edges that are
+guaranteed by transitivity.</p>
 </body>
 </html>

@@ -30,6 +30,9 @@
         font-size: 0.9em;
         padding: 1em;
       }
+      h1 {
+        font-size: 1.8em;
+      }
     }
     @media print {
       body {
@@ -134,6 +137,12 @@
     #TOC li {
       list-style: none;
     }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
     #TOC a:not(:hover) {
       text-decoration: none;
     }
@@ -144,14 +153,25 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
-<p>The <span><strong>set of rational numbers</strong></span>, <span class="math inline">\(\mathbb{Q}\)</span> is defined as <span class="math display">\[\left\{ \frac{p}{q} \mid p \in \mathbb{Z}  \text{ and  } q  \in \mathbb{Z} \text{ and } q \neq  0 \right\}
+<div class="flushright">
+
+</div>
+<p>The <span><strong>set of rational numbers</strong></span>, <span
+class="math inline">\(\mathbb{Q}\)</span> is defined as <span
+class="math display">\[\left\{ \frac{p}{q} \mid p \in \mathbb{Z}  \text{
+and  } q  \in \mathbb{Z} \text{ and } q \neq  0 \right\}
 \text{~~~~or, equivalently,~~~~}
-\{ x  \in  \mathbb{R} \mid \exists p \in \mathbb{Z}  \exists q \in \mathbb{Z}^+ ( p =  x \cdot q) \}\]</span> <span><em>Extra practice</em></span>: Use the definition of set equality to prove that the definitions above give the same set.</p>
+\{ x  \in  \mathbb{R} \mid \exists p \in \mathbb{Z}  \exists q \in
+\mathbb{Z}^+ ( p =  x \cdot q) \}\]</span> <span><em>Extra
+practice</em></span>: Use the definition of set equality to prove that
+the definitions above give the same set.</p>
 </body>
 </html>

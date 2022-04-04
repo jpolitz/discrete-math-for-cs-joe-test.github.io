@@ -30,6 +30,9 @@
         font-size: 0.9em;
         padding: 1em;
       }
+      h1 {
+        font-size: 1.8em;
+      }
     }
     @media print {
       body {
@@ -134,6 +137,12 @@
     #TOC li {
       list-style: none;
     }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
     #TOC a:not(:hover) {
       text-decoration: none;
     }
@@ -144,15 +153,27 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
-<p><span><strong>Definition</strong></span> The function <span class="math inline">\(append : L \times \mathbb{N} \to L\)</span> that adds an element at the end of a linked list is defined by <span class="math display">\[\begin{array}{llll}
-\textrm{Basis Step:} &amp; \textrm{If } m \in \mathbb{N}\textrm{ then } &amp; \phantom{append(~([], m)~)} &amp; \phantom{= (m, []) }\\
-\textrm{Recursive Step:} &amp; \textrm{If } l \in L\textrm{ and }n \in \mathbb{N}\textrm{ and }m \in \mathbb{N}\textrm{, then  } &amp; \phantom{append(~(~(n, l), m~)~) } &amp;\phantom{= (n, append(~(l, m)~)~)}
+<div class="flushright">
+
+</div>
+<p><span><strong>Definition</strong></span> The function <span
+class="math inline">\(append : L \times \mathbb{N} \to L\)</span> that
+adds an element at the end of a linked list is defined by <span
+class="math display">\[\begin{array}{llll}
+\textrm{Basis Step:} &amp; \textrm{If } m \in \mathbb{N}\textrm{ then }
+&amp; \phantom{append(~([], m)~)} &amp; \phantom{= (m, []) }\\
+\textrm{Recursive Step:} &amp; \textrm{If } l \in L\textrm{ and }n \in
+\mathbb{N}\textrm{ and }m \in \mathbb{N}\textrm{, then  } &amp;
+\phantom{append(~(~(n, l), m~)~) } &amp;\phantom{= (n, append(~(l,
+m)~)~)}
 \end{array}\]</span></p>
 </body>
 </html>

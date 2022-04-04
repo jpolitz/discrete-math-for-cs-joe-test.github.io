@@ -128,34 +128,41 @@
             <h2 tabindex = "2"> Notes</h2>
                 <a tabindex = "2" class="button PDF" aria-label="Download PDF" href=../output/lessons/Week9.pdf download>PDF</a>  <a tabindex = "2" class="button LaTeX" aria-label="Download .LaTeX" 
                     href=../notes/lessons-flat/Week9.tex download>LaTeX</a>  <a tabindex = "2" class="button HTML" aria-label="Open HTML file of Document in New Tab" 
-                    href= ../output/lessons/Week9.html target="HTML">Raw HTML</a><div style="font-weight: 700; font-size: 120%; display: inline-block;">&nbsp&nbspAnnotations:&nbsp</div><label class="toggle">
-                                <span class="onoff">OFF</span>
-                                            <input type="checkbox" />
-                                            <span class="slider round" id="annotationsOnButton"></span>
-                                            </label> <br> <script> document.getElementById("annotationsOnButton").onclick = function() {annotations(
-                 "../output/lessons/Week9.pdf","../files/Week9-annotated.pdf", "Notes")}; </script> <br> <iframe class="PDFjs" id="Notes" src="web/viewer.html?file=../../output/lessons/Week9.pdf" 
+                    href= ../output/lessons/Week9.html target="HTML">Raw HTML</a>
+                    <label class="switch">
+                    <input type="checkbox" id="toggle-1">
+                    <span class="slider round"></span>
+                    </label>
+                     <script> document.getElementById("toggle-1").onclick = function() {annotations(
+                     1, "../output/lessons/Week9.pdf","../files/Week9-annotated.pdf", "Week9.tex")}; </script> <br> <iframe class="PDFjs" id="Week9.tex" src="web/viewer.html?file=../../output/lessons/Week9.pdf" 
                 title="webviewer" frameborder="0" width="100%" height="600"></iframe> 
         </div>
         <script>
-			const toggle = document.querySelector('.toggle input')
-
-			toggle.addEventListener('click', () => {
-    		const onOff = toggle.parentNode.querySelector('.onoff')
-    		onOff.textContent = toggle.checked ? 'ON' : 'OFF'
+			
+			const toggles = document.querySelector('.toggle input');
+			
+			toggles.addEventListener('click', () => {
+    		const onOff = toggles.parentNode.querySelector('.onoff')
+    		onOff.textContent = toggles.checked ? 'ON' : 'OFF'
 			})
 			
-			function annotations(notes, annotated,id) {
+			// const divs = document.querySelectorAll('.toggle input');
+
+			// divs.forEach(el => el.addEventListener('click', () => {
+    		// const onOff = el.parentNode.querySelector('.onoff')
+    		// onOff.textContent = el.checked ? 'ON' : 'OFF'
+			// }));
+			
+			function annotations(num, notes, annotated,id) {
 				var doc;
 				var drive;
-				const toggle = document.querySelector('.toggle input')
-				//0 value means annotations are off 
-				if (toggle.checked) {
-					doc = "web/viewer.html?file=../"+notes
+				if (document.getElementById('toggle-'+num).checked) {
+					doc = "web/viewer.html?file=../" +annotated
+					
 				} 
 
-				//1 value turns annotations on
 				else {
-					doc = "web/viewer.html?file=../" +annotated
+					doc = "web/viewer.html?file=../"+notes
 				}
 				
                 document.getElementById(id).src = doc;
@@ -164,9 +171,9 @@
         <br><br>	
 		
        <div id="embeddedLinks">
-		   <h2 id="Lecture-podcast">Lecture podcast</h2><p>See <a href="https://podcast.ucsd.edu/watch/fa21/cse20_a00/1">videos on podcast.ucsd.edu</a>.</p>
+		   <h2 id="https://youtu.be/sH9znwj91Cs">(Video) Partial orders and Hasse Diagrams</h2><iframe height="600px" width="100%" src="https://www.youtube.com/embed/sH9znwj91Cs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h2 id="https://youtu.be/oKOwGlevpyg">(Video) Diffie-Hellman and cryptography</h2><iframe height="600px" width="100%" src="https://www.youtube.com/embed/oKOwGlevpyg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h2 id="https://youtu.be/-33d6BnYw94">(Video) Modular Exponentiation</h2><iframe height="600px" width="100%" src="https://www.youtube.com/embed/-33d6BnYw94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h2 id="https://youtu.be/dWFleGJHgpQ">(Video) Week 9 Discussion Zoom recording</h2><iframe height="600px" width="100%" src="https://www.youtube.com/embed/dWFleGJHgpQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h2 id="Lecture-podcast">Lecture podcast</h2><p>See <a href="https://podcast.ucsd.edu/watch/fa21/cse20_a00/1">videos on podcast.ucsd.edu</a>.</p>
 <h2 id="Discussion-slides">Discussion slides</h2><p><a href="../files/DiscussionWeek9.pptx">Download pptx slides</a></p>
-<h2 id="(Video)-Partial-orders-and-Hasse-Diagrams">(Video) Partial orders and Hasse Diagrams</h2><iframe height="600px" width="100%" src="https://www.youtube.com/embed/sH9znwj91Cs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h2 id="(Video)-Diffie-Hellman-and-cryptography">(Video) Diffie-Hellman and cryptography</h2><iframe height="600px" width="100%" src="https://www.youtube.com/embed/oKOwGlevpyg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h2 id="(Video)-Modular-Exponentiation">(Video) Modular Exponentiation</h2><iframe height="600px" width="100%" src="https://www.youtube.com/embed/-33d6BnYw94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h2 id="(Video)-Week-9-Discussion-Zoom-recording">(Video) Week 9 Discussion Zoom recording</h2><iframe height="600px" width="100%" src="https://www.youtube.com/embed/dWFleGJHgpQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 	   </div>
 			
 	</div>

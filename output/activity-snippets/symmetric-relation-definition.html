@@ -30,6 +30,9 @@
         font-size: 0.9em;
         padding: 1em;
       }
+      h1 {
+        font-size: 1.8em;
+      }
     }
     @media print {
       body {
@@ -134,6 +137,12 @@
     #TOC li {
       list-style: none;
     }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
     #TOC a:not(:hover) {
       text-decoration: none;
     }
@@ -144,12 +153,22 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
-<p>A relation <span class="math inline">\(R\)</span> on a set <span class="math inline">\(A\)</span> is called <span><strong>symmetric</strong></span> means <span class="math inline">\((b, a) \in R\)</span> whenever <span class="math inline">\((a, b) \in R\)</span>, for all <span class="math inline">\(a, b \in A\)</span>.</p>
+<div class="flushright">
+
+</div>
+<p>A relation <span class="math inline">\(R\)</span> on a set <span
+class="math inline">\(A\)</span> is called
+<span><strong>symmetric</strong></span> means <span
+class="math inline">\((b, a) \in R\)</span> whenever <span
+class="math inline">\((a, b) \in R\)</span>, for all <span
+class="math inline">\(a, b \in A\)</span>.</p>
 </body>
 </html>

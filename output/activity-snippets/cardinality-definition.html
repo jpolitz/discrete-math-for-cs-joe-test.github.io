@@ -30,6 +30,9 @@
         font-size: 0.9em;
         padding: 1em;
       }
+      h1 {
+        font-size: 1.8em;
+      }
     }
     @media print {
       body {
@@ -134,6 +137,12 @@
     #TOC li {
       list-style: none;
     }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
     #TOC a:not(:hover) {
       text-decoration: none;
     }
@@ -144,15 +153,28 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
-<p>For nonempty sets <span class="math inline">\(A, B\)</span> we say <span class="math display">\[\begin{aligned}
-|A| \leq |B| &amp;\text{ means there is a one-to-one function with domain $A$, codomain $B$} \\
-|A| \geq |B| &amp;\text{ means there is an onto function with domain $A$, codomain $B$} \\
-|A| = |B| &amp;\text{ means there is a bijection with domain $A$, codomain $B$}\end{aligned}\]</span> For all sets <span class="math inline">\(A\)</span>, we say <span class="math inline">\(|A| = |\emptyset|\)</span>, <span class="math inline">\(|\emptyset| = |A|\)</span> if and only if <span class="math inline">\(A = \emptyset\)</span>.</p>
+<div class="flushright">
+
+</div>
+<p>For nonempty sets <span class="math inline">\(A, B\)</span> we say
+<span class="math display">\[\begin{aligned}
+|A| \leq |B| &amp;\text{ means there is a one-to-one function with
+domain $A$, codomain $B$} \\
+|A| \geq |B| &amp;\text{ means there is an onto function with domain
+$A$, codomain $B$} \\
+|A| = |B| &amp;\text{ means there is a bijection with domain $A$,
+codomain $B$}\end{aligned}\]</span> For all sets <span
+class="math inline">\(A\)</span>, we say <span class="math inline">\(|A|
+= |\emptyset|\)</span>, <span class="math inline">\(|\emptyset| =
+|A|\)</span> if and only if <span class="math inline">\(A =
+\emptyset\)</span>.</p>
 </body>
 </html>
